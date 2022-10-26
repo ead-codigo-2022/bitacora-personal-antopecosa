@@ -48,5 +48,8 @@ table {
 	border-spacing: 0;
 }
 
-/* Desde aquí el código propio/*
+/* Desde aquí el código propio*/
 
+p {
+    font-family: 'Space Mono', monospace;
+}
