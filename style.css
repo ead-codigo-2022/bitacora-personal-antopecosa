@@ -49,21 +49,36 @@ table {
 }
 
 /* Desde aquí el código propio*/
-/*fonts*/
+/*fonts
 font-family: 'Exo', sans-serif;
 font-family: 'Space Mono', monospace;
+*/
 h1 {
     
 }
 
-.header {
-    overflow: hidden;
-    background-color: #2F2F2F;
-    padding: 5px 10px;
-  }
-  
+header a {
+    text-decoration: none;
+}
+header {
+    padding: 0 20px;
+    background-color:  #2F2F2F;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
+}
+#logoanto {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
   /* Estilo links */
-  .header a {
+ul {
     float: left;
     color: #FEFCFD;
     text-align: center;
@@ -72,43 +87,91 @@ h1 {
     font-size: 16px;
     line-height: 25px;
     border-radius: 20px;
-    font-family: 'Exo', sans-serif;
-    font-weight: 400;
+}
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: right;
+    justify-content: space-around;
+}
+  
+ul a {
+    color: #FEFCFD;
+}
+  
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+  
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#icono-hamburguesa {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
   }
   
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-   
+#icono-hamburguesa div {
+    width: 35px;
+    height: 3px;
+    background-color: #FEFCFD;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+  
+.open .bar2 {
+    opacity: 0;
+}
+  
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+  
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: flex-start;
+    
+
   }
   
-  /* Hover */
-  .header a:hover {
-    background-color:#F8F8F8;
-    color: black;
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 55%;
+    height: 8rem;
+    width: 30%;
+    color: #FEFCFD;
+    background-color: #2F2F2F;
+    margin: 10px;
     
   }
-  
-  /* Link seleccionado*/
-  .header a.active {
-    background-color: dodgerblue;
-    color: white;
+ 
+  .mobile-menu li {
+    margin-bottom: 10px;
   }
   
-  /* Sección hacia la derecha */
-  .header-right {
-    float: right;
-  }
+  @media only screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
   
-  /* pantalla de  500px wide o menos enlista los links hacia abajo*/
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
+    #icono-hamburguesa {
       display: block;
-      text-align: left;
-    }
-    .header-right {
-      float: none;
     }
   }
+  
