@@ -257,3 +257,20 @@ ul li:hover {
   .perfil-anto {
     margin: 2rem;
   }
+
+  .div-clases{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+
+  }
+  .titulo-clases {
+    align-items: flex-start;
+  }
+  .parrafo-clase {
+    padding: 5%;
+
+  }
+
+ 
