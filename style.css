@@ -53,9 +53,27 @@ table {
 font-family: 'Exo', sans-serif;
 font-family: 'Space Mono', monospace;
 */
+
+
 h1 {
-    
+  font-family: 'Space Mono', monospace;
+  font-size: 50px; 
+  margin-top: 5%;
+  margin-bottom: 5px;
 }
+h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;   
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom:5%;
+}
+
+p {
+  font-family: 'Exo', sans-serif;
+  line-height: normal;
+}
+
 
 header a {
     text-decoration: none;
@@ -173,5 +191,66 @@ ul li:hover {
     #icono-hamburguesa {
       display: block;
     }
+    .footer {
+   
+      flex-direction: column;
+      height: fit-content;
+      background-color: #2F2F2F;
+      line-height: 5%;
+    }
+    p {
+      width: 100%;
+      margin: 10%;
+    }
+    .seccion1 {
+      margin: 10%;
+    }
+  }
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+    max-height: 100%;
   }
   
+  #content-wrap {
+    padding-bottom: 3rem;    /* Footer height */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;            /* Footer height */
+    background-color: #2F2F2F;
+  }
+  .footer {
+    padding: 2rem;
+    display: flex;
+    justify-content:space-between;
+    line-height: 20px;
+    font-family: 'Exo', sans-serif;
+    color: rgba (255,255,255, 50%);
+    background-color: #2F2F2F;
+  }
+  #footer:hover{
+    color: #FEFCFD;
+    transition: 0.5s;
+  }
+  a {
+    color: #FEFCFD;
+    text-decoration: none;
+  }
+  .seccion1 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  } 
+  p {
+    width: 50vh;
+  } 
+  .seccion2 {
+    background-color: antiquewhite;
+  }
