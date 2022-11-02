@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es_CL">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,39 +12,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
    
-    <link rel="stylesheet" href="/style.css">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Bitácora DDC 2022 Antonia Jeldes</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a id=logoanto href="index.html">
-                <img alt="logo Antonia" src="#"
-                width="150" height="70">
-             </a>
-        </div> 
-        <nav>
-            <ul>
-                <li><a href="/Páginas/Clases.html">Clases</a></li>
-                <li><a href="/Páginas/Sobre mi.html">Sobre mí</a></li>
-                <li><a href="/Páginas/Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-       <div id="icono-hamburguesa" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="/Páginas/Clases.html">Clases</a></li>
-                <li><a href="/Páginas/Sobre mi.html">Sobre mí</a></li>
-                <li><a href="/Páginas/Contacto.html">Contacto</a></li>
-            </ul>
-       </div>   
-         
-</div> 
+    <div id="page-container">
+        <div id="content-wrap">
+
+            <!--HEADER-->
+            <header>
+                <div>
+                    <a id=logoanto href="index.html">
+                        <img alt="* Antonia Jeldes *" src="#"
+                        width="200" height="70">
+                     </a>
+                </div> 
+                <nav>
+                    <ul>
+                        <li><a href="Clases.html">Clases</a></li>
+                        <li><a href="Sobre mi.html">Sobre mí</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+               <div id="icono-hamburguesa" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <ul class="mobile-menu">
+                        <li><a href="Clases.html">Clases</a></li>
+                        <li><a href="Sobre mi.html">Sobre mí</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+               </div>   
+                 
+        </div>
+        <!--CONTENIDO DE PÁG-->
          
     </header>
     <script src="index.js"></script> 
+
+
+    <div class="contacto">
+        <form action="action_page.php">
+      
+          <label for="fname">Nombre</label>
+          <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+      
+          <label for="lname">Apellido</label>
+          <input type="text" id="lname" name="lastname" placeholder="Tu apellido...">
+      
+              
+          <label for="subject">Mensaje</label>
+          <textarea id="subject" name="subject" placeholder="Escribe aquí..." style="height:200px"></textarea>
+      
+          <input type="submit" value="Enviar">
+      
+        </form>
+      </div> 
+
+
+      
+
+       <!--FOOTER--> 
+       <footer id="footer">
+        <div class="footer">
+      
+        <span>Diseño desde el Código 2022 </span> 
+        <span>Antonia Jeldes </span> 
+        <a href="mailto:antonia.jeldes.c@mail.pucv.cl" alt="Enviar email a">antonia.jeldes.c@mail.pucv.cl</a>
+    </div>
+    </footer>
+  </div>
+<script src="index.js"></script> 
 </body>
+
+
+
 </html>

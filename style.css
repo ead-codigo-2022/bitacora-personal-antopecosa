@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+min-height: fit-content;
 }
 ol, ul {
 	list-style: none;
@@ -73,6 +73,8 @@ p {
   font-family: 'Exo', sans-serif;
   line-height: normal;
   word-wrap: break-word;
+  overflow: auto;
+  margin-bottom: 2rem ;
 }
 
 
@@ -88,6 +90,7 @@ header {
     padding: 5px;
     font-family: 'Exo', sans-serif;
     font-weight: 400;
+    position: sticky;
 }
 #logoanto {
     font-weight: bold;
@@ -109,7 +112,7 @@ ul {
 }
 ul {
     list-style: none;
-    height: 100%;
+    
     display: flex;
     align-items: right;
     justify-content: space-around;
@@ -210,19 +213,23 @@ ul li:hover {
   #page-container {
     position: relative;
     min-height: 100vh;
-    max-height: 100%;
+  max-height: 100%;
   }
   
   #content-wrap {
     padding-bottom: 3rem;    /* Footer height */
   }
-  
+  footer{
+    margin-top: 2rem;
+  }
   #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 4rem;            /* Footer height */
+    height: 2rem;            /* Footer height */
     background-color: #2F2F2F;
+   
+ 
   }
   .footer {
     padding: 2rem;
@@ -249,10 +256,21 @@ ul li:hover {
     justify-content: center;
 
   } 
+  .seccion3 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+   height: fit-content;
+
+
+  } 
   p {
     max-width: 50vh;
   } 
-  .seccion2 {
+  .divisor {
     background-image: url("https://www.svgrepo.com/show/357347/asterisk.svg");
     background-repeat: repeat;
     padding-bottom: 6%;
@@ -279,21 +297,69 @@ ul li:hover {
   ol {
     font-family: 'Exo', sans-serif;
     text-align: center;
+    line-height: 150%;
   }
 
   li::before {
     display: inline-block;
     content:" *" ;
     margin-right: 1rem;
-}
-.contenido-del-curso{
-  background-color: rgba(255,255,255,1);
-}
-.fondolista{
-  background-color: rgba(255,255,255,0.85);
- 
-  display: flex;
-  justify-content: center;
-  
-}
+  }
+  .seccion2 {
+    margin: 3%;
+  }
+  .recursos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .link {
+    color: white;
+    font-family: 'Exo', sans-serif;
+    background-color: black;
+    padding: 1%;
+    margin: 1%;
 
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #c40000a1;
+    transition: 0.3s;
+  }
+  
+  .contacto {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: 'Exo', sans-serif;
+    width: 50%;
+    align-content: center;
+    position: relative;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    margin-top: -50px;
+    margin-left: -50px;
+   
+  }
