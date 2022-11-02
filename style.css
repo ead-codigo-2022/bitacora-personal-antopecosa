@@ -1,4 +1,4 @@
-/* Insertamos un reseateador de la hoja de estilo */
+/* Insertamos un reseateador de la hoja de estilo */ol
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -72,6 +72,7 @@ h2 {
 p {
   font-family: 'Exo', sans-serif;
   line-height: normal;
+  word-wrap: break-word;
 }
 
 
@@ -199,9 +200,9 @@ ul li:hover {
       line-height: 5%;
     }
     p {
-      width: 100%;
-      margin: 10%;
-    }
+      word-wrap: break-word;
+      
+        }
     .seccion1 {
       margin: 10%;
     }
@@ -249,10 +250,13 @@ ul li:hover {
 
   } 
   p {
-    width: 50vh;
+    max-width: 50vh;
   } 
   .seccion2 {
-    background-color: antiquewhite;
+    background-image: url("https://www.svgrepo.com/show/357347/asterisk.svg");
+    background-repeat: repeat;
+    padding-bottom: 6%;
+    
   }
   .perfil-anto {
     margin: 2rem;
@@ -272,5 +276,24 @@ ul li:hover {
     padding: 5%;
 
   }
+  ol {
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+  }
 
+  li::before {
+    display: inline-block;
+    content:" *" ;
+    margin-right: 1rem;
+}
+.contenido-del-curso{
+  background-color: rgba(255,255,255,1);
+}
+.fondolista{
+  background-color: rgba(255,255,255,0.85);
  
+  display: flex;
+  justify-content: center;
+  
+}
+
